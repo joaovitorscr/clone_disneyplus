@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
 
 @font-face {
     font-family: Avenir;
@@ -74,7 +75,7 @@ body {
     height: 60px;
     font-size: 18px;
     color: variaveis.$secondaryTextColor;
-    background-color: #6421ff;
+    background-color: variaveis.$buttonBgColor;
     text-transform: uppercase;
     border-radius: 4px;
     margin-top:  2vw;

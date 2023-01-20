@@ -4,7 +4,7 @@
 #### Clone Website: https://clone-disneyplus-bay.vercel.app/
 
 ## Description:
-  This is a project for [E.B.A.C](https://ebaconline.com.br/), where the objective was clone the Disney+ Landing Page how a form of practicing the knowleage we acquired during this front-end course.
+  This is a project for [E.B.A.C](https://ebaconline.com.br/), where the objective was clone the Disney+ Landing Page how a form of practicing the knowledge we acquired during this front-end course.
 
 ## Requirements:
 

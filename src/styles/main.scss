@@ -4,6 +4,8 @@
 @use 'plans';
 @use 'available-devices';
 @use 'faq';
+@use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -22,6 +24,7 @@
     padding: 0;
     margin: 0;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 @mixin text($fontSize: 16px) {
@@ -70,22 +73,45 @@ body {
 }
 
 .button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
     color: variaveis.$secondaryTextColor;
-    background-color: variaveis.$buttonBgColor;
+    background-color: variaveis.$buttonBgColorPrimary;
     text-transform: uppercase;
     border-radius: 4px;
-    margin-top:  2vw;
-    margin-bottom: 8px;
     cursor: pointer;
     border: none;
-}
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$buttonBgColorPrimary;
 
-li {
-    list-style: none;
+    &:hover {
+        background-color: lighten(variaveis.$buttonBgColorPrimary, 3%);
+    }
+
+    &--secondary {
+        background-color: variaveis.$buttonBgColorSecondary;
+        border-color: variaveis.$buttonBgColorSecondary;
+
+        &:hover {
+            background-color: lighten(variaveis.$buttonBgColorSecondary, 3%);
+        }
+    }
+
+    &--dark {
+        background-color: rgba(variaveis.$buttonBgColorDark, 0.8);
+        border-color: variaveis.$secondaryTextColor;
+
+        &:hover {
+            background-color: variaveis.$secondaryTextColor;
+            color: variaveis.$bgColor;
+        }
+    }
 }
 
 .image-text-section {
